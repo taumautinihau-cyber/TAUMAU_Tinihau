@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projet GLPI, Tinihau Taumau</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <b>T. Taumau</b>
+  <nav aria-label="Menu"><a href="index.html">Accueil</a><a href="index.html#projets">Projets</a><a href="index.html#contact">Contact</a></nav>
+</div></header>
+
+<section><div class="wrap">
+  <h1 style="font-size:clamp(2rem,5vw,3rem);margin-bottom:12px">Gestion des incidents avec GLPI</h1>
+  <p class="lead"><b>Objectif :</b> permettre aux utilisateurs de déclarer un incident et à un technicien de le traiter, avec un suivi par statut et une vue d'ensemble du parc informatique.</p>
+  <div class="tags"><span>GLPI</span><span>Tickets</span><span>Profils et droits</span><span>Inventaire</span></div>
+
+  <!-- Étape : copie ce bloc pour en ajouter une -->
+  <div class="step">
+    <h3>1. Créer un utilisateur final</h3>
+    <p>Dans Administration > Utilisateurs, je clique sur « Ajouter un utilisateur », puis je renseigne l'identifiant, le nom, le prénom et le mot de passe. Le profil attribué est Self-Service : l'utilisateur peut ouvrir des tickets mais pas administrer GLPI.</p>
+    <div class="figs">
+      <figure><img loading="lazy" src="img/glpi-01.jpg" alt="Menu Administration, Utilisateurs, bouton Ajouter"><figcaption>Menu Administration > Utilisateurs > Ajouter</figcaption></figure>
+      <figure><img loading="lazy" src="img/glpi-02.jpg" alt="Formulaire de création de l'utilisateur"><figcaption>Formulaire de création avec le profil Self-Service</figcaption></figure>
+    </div>
+  </div>
+
+  <!-- Étape : copie ce bloc pour en ajouter une -->
+  <div class="step">
+    <h3>2. Changer de session</h3>
+    <p>Je me déconnecte du compte Super-Admin pour tester le parcours côté utilisateur, puis je me reconnecte en Super-Admin pour continuer l'administration.</p>
+    <div class="figs">
+      <figure><img loading="lazy" src="img/glpi-03.jpg" alt="Menu de déconnexion de GLPI"><figcaption>Déconnexion depuis le menu du profil</figcaption></figure>
+      <figure><img loading="lazy" src="img/glpi-04.jpg" alt="Liste des utilisateurs GLPI"><figcaption>La liste des utilisateurs après création</figcaption></figure>
+    </div>
+  </div>
+
+  <!-- Étape : copie ce bloc pour en ajouter une -->
+  <div class="step">
+    <h3>3. Ouvrir un ticket d'incident</h3>
+    <p>Depuis l'accueil, « Créer un ticket » : je choisis le type Incident, le niveau d'urgence (Moyenne), un titre et une description (ici, un problème de son sur un ordinateur).</p>
+    <div class="figs">
+      <figure><img loading="lazy" src="img/glpi-05.jpg" alt="Page Tickets avec le bouton Créer un ticket"><figcaption>Page Tickets avec les statuts Nouveau, En cours, En attente, Résolu, Clos</figcaption></figure>
+      <figure><img loading="lazy" src="img/glpi-06.jpg" alt="Formulaire de création de ticket"><figcaption>Formulaire : type, urgence, titre, description</figcaption></figure>
+    </div>
+  </div>
+
+  <!-- Étape : copie ce bloc pour en ajouter une -->
+  <div class="step">
+    <h3>4. Créer le compte technicien</h3>
+    <p>Je crée un second compte avec le profil Technicien, qui peut traiter les tickets.</p>
+    <div class="figs">
+      <figure><img loading="lazy" src="img/glpi-07.jpg" alt="Formulaire de création du technicien"><figcaption>Création d'un utilisateur avec le profil Technicien</figcaption></figure>
+    </div>
+  </div>
+
+  <!-- Étape : copie ce bloc pour en ajouter une -->
+  <div class="step">
+    <h3>5. Répondre à l'utilisateur</h3>
+    <p>Le technicien ouvre le ticket et répond à l'utilisateur : vérifications de base (volume, périphérique audio) et proposition d'intervention à distance.</p>
+    <div class="figs">
+      <figure><img loading="lazy" src="img/glpi-08.jpg" alt="Éditeur de réponse du ticket"><figcaption>Rédaction de la réponse</figcaption></figure>
+      <figure><img loading="lazy" src="img/glpi-09.jpg" alt="Ticket avec la réponse du technicien"><figcaption>Le ticket affiche la discussion</figcaption></figure>
+    </div>
+  </div>
+
+  <!-- Étape : copie ce bloc pour en ajouter une -->
+  <div class="step">
+    <h3>6. Clôturer le ticket</h3>
+    <p>Une fois le problème réglé, je passe le statut du ticket à « Résolu » et j'enregistre.</p>
+    <div class="figs">
+      <figure><img loading="lazy" src="img/glpi-10.jpg" alt="Ticket passé au statut Résolu"><figcaption>Changement du statut en Résolu</figcaption></figure>
+    </div>
+  </div>
+
+  <!-- Étape : copie ce bloc pour en ajouter une -->
+  <div class="step">
+    <h3>7. Suivre le parc informatique</h3>
+    <p>Le tableau de bord de l'inventaire affiche le nombre d'ordinateurs, de logiciels, de moniteurs et de matériels réseau, avec des graphiques par statut, par type et par fabricant.</p>
+    <div class="figs">
+      <figure><img loading="lazy" src="img/glpi-11.jpg" alt="Tableau de bord GLPI de l'inventaire"><figcaption>Tableau de bord de l'inventaire du parc</figcaption></figure>
+    </div>
+  </div>
+
+  <a class="btn" style="background:var(--navy);border-color:var(--navy);color:#fff" href="index.html#projets">Retour aux projets</a>
+</div></section>
+
+<footer><div class="wrap">© 2026 Tinihau Taumau. Portfolio réalisé dans le cadre du BTS SIO.</div></footer>
+</body>
+</html>
